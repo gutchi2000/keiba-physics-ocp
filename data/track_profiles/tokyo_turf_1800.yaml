@@ -1,0 +1,36 @@
+track: "tokyo"
+surface: "turf"
+course_name: "A"          # 基準（レール移動は rail_positions に列挙）
+distance_m: 1800
+direction: "left"
+
+# 東京芝コース共通の公開値
+straight_length_m: 525.9      # 直線距離
+elevation_total_m: 2.7        # 高低差
+
+# ゴール前坂（断面図から後で推定して更新）
+slope_last_m: 0
+slope_last_perm: 0
+
+# 外回り2コーナー型の初期設定
+n_turn: 2
+turn_angle_total_rad: 3.1416   # ワンターン≈π
+turn_share: 0.30               # 初期値（CVで微調整）
+
+# 外々ロス近似
+lane_width_m: 1.2
+radius_in_m: null
+radius_out_m: null
+
+rail_positions:
+  - code: "A"
+    note: "一周距離 2083.1m / 幅員 31–41m"
+  - code: "B"
+    note: "一周距離 2101.9m / 幅員 28–38m"
+  - code: "C"
+    note: "一周距離 2120.8m / 幅員 25–35m"
+  - code: "D"
+    note: "一周距離 2139.6m / 幅員 22–32m"
+
+circumference_m_by_rail: {A: 2083.1, B: 2101.9, C: 2120.8, D: 2139.6}
+width_range_m_by_rail:   {A: [31,41], B: [28,38], C: [25,35], D: [22,32]}
