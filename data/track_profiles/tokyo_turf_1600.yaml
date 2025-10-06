@@ -1,0 +1,38 @@
+track: "tokyo"
+surface: "turf"
+course_name: "A"          # 基準。レール移動は下の rail_positions で管理
+distance_m: 1600
+direction: "left"
+
+# 画像の表より
+straight_length_m: 525.9     # 直線距離
+elevation_total_m: 2.7       # 高低差
+
+# ゴール前坂（公式表に長さ・勾配の明記なし → 後で断面図から推定）
+slope_last_m: 0
+slope_last_perm: 0
+
+# カーブ構成（外回り2コーナー型想定）
+n_turn: 2
+turn_angle_total_rad: 3.1416  # ワンターン≈π
+turn_share: 0.30              # 初期値（後でCVで調整）
+
+# 外々ロス近似
+lane_width_m: 1.2
+radius_in_m: null
+radius_out_m: null
+
+# レール位置（画像の一覧に合わせて）
+rail_positions:
+  - code: "A"
+    note: "一周距離 2083.1m / 幅員 31–41m"
+  - code: "B"
+    note: "一周距離 2101.9m / 幅員 28–38m"
+  - code: "C"
+    note: "一周距離 2120.8m / 幅員 25–35m"
+  - code: "D"
+    note: "一周距離 2139.6m / 幅員 22–32m"
+
+# 参考（任意の補助キー：使わなくてもOK）
+circumference_m_by_rail: {A: 2083.1, B: 2101.9, C: 2120.8, D: 2139.6}
+width_range_m_by_rail:   {A: [31,41], B: [28,38], C: [25,35], D: [22,32]}
