@@ -205,3 +205,27 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- keiba-physics data policy ---
+# Keep raw and intermediate data out of git
+data/raw/**
+data/processed/**
+
+# Allow curated track profiles to be versioned
+!data/track_profiles/**
+!data/track_profiles/*.yaml
+
+# Secrets & env
+.secrets/**
+.env
+
+# Local databases / caches
+*.sqlite
+*.db
+
+# Jupyter
+*.ipynb_checkpoints
+
+# OS / editors
+.DS_Store
+Thumbs.db
