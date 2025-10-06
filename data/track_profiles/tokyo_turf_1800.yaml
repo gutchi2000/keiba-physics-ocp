@@ -9,8 +9,8 @@ straight_length_m: 525.9      # 直線距離
 elevation_total_m: 2.7        # 高低差
 
 # ゴール前坂（断面図から後で推定して更新）
-slope_last_m: 0
-slope_last_perm: 0
+slope_last_m: 200
+slope_last_perm: 10
 
 # 外回り2コーナー型の初期設定
 n_turn: 2
