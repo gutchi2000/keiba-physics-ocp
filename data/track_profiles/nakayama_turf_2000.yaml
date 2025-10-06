@@ -1,38 +1,35 @@
 track: "nakayama"
 surface: "turf"
-course_name: "inner"      # 中山は基本 内回り
+course_name: "inner"
 distance_m: 2000
 direction: "right"
 
-# コースページからそのまま転記
-straight_length_m: <直線長[m]>        # 例: xxx.x
-elevation_total_m: <高低差[m]>        # 例: x.x
+# 公開値（JRA）
+straight_length_m: 310.0
+elevation_total_m: 5.3
 
-# ゴール前坂（断面図で読み取り：上り距離= slope_last_m、勾配‰= 1000*Δh/距離）
-slope_last_m: <上り距離[m]>           # 例: 200
-slope_last_perm: <勾配[‰]>            # 例: 12
+# ゴール前坂（JRA記述：残り180m→70mに2.2m上り）
+slope_last_m: 110
+slope_last_perm: 20
 
 # 4コーナー型の初期設定
 n_turn: 4
-turn_angle_total_rad: 6.2832          # 4コーナー＝一周 2π を目安
-turn_share: 0.45                      # 初期値（後でCVで0.42〜0.50で調整）
+turn_angle_total_rad: 6.2832
+turn_share: 0.45
 
 # 外々ロス近似
 lane_width_m: 1.2
 radius_in_m: null
 radius_out_m: null
 
-# A〜Dの一周距離/幅員は表からメモ（分かる範囲でOK）
 rail_positions:
   - code: "A"
-    note: "一周距離 <m> / 幅員 <a>–<b>m"
+    note: "一周距離 1667.1m（内回り） / 幅員 20–32m（内回り）"
   - code: "B"
-    note: "一周距離 <m> / 幅員 <a>–<b>m"
+    note: "一周距離 1686.6m（内回り） / 幅員 17–29m（内回り）"
   - code: "C"
-    note: "一周距離 <m> / 幅員 <a>–<b>m"
-  - code: "D"
-    note: "一周距離 <m> / 幅員 <a>–<b>m"
+    note: "一周距離 1704.8m（内回り） / 幅員 14–26m（内回り）"
 
-# 任意（書ける分だけ）
-circumference_m_by_rail: {A: <>, B: <>, C: <>, D: <>}
-width_range_m_by_rail:   {A: [<a>,<b>], B: [<a>,<b>], C: [<a>,<b>], D: [<a>,<b>]}
+circumference_m_by_rail: {A: 1667.1, B: 1686.6, C: 1704.8}
+width_range_m_by_rail:   {A: [20,32], B: [17,29], C: [14,26]}
+rail_offset_m_by_code:   {A: 0, B: 3, C: 6}
