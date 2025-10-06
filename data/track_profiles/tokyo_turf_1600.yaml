@@ -36,3 +36,4 @@ rail_positions:
 # 参考（任意の補助キー：使わなくてもOK）
 circumference_m_by_rail: {A: 2083.1, B: 2101.9, C: 2120.8, D: 2139.6}
 width_range_m_by_rail:   {A: [31,41], B: [28,38], C: [25,35], D: [22,32]}
+rail_offset_m_by_code: {A: 0, B: 3, C: 6, D: 9}  # 図面のA→Dの移動量(目安)
