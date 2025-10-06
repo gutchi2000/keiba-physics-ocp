@@ -9,8 +9,8 @@ straight_length_m: 501.6     # 直線距離[m]
 elevation_total_m: 2.5       # 高低差[m]
 
 # ゴール前坂（公称の長さ/勾配は未記載 → 後で断面から推定して更新）
-slope_last_m: 0
-slope_last_perm: 0
+slope_last_m: 300        # 直線の上り区間の長さ
+slope_last_perm: 8       # 勾配（‰）= 1000 * 2.5 / 300 ≈ 8.3 → 8
 
 # カーブ構成（2コーナー型）
 n_turn: 2
