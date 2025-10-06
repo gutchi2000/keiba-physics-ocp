@@ -1,0 +1,24 @@
+# 場×コース×距離の物理プロファイル（全場で共通のキー）
+# これを雛形に、sapporo_turf_1200.yaml 等の実体ファイルを今後追加します。
+track: ""              # 例: tokyo / nakayama / kyoto / hanshin / chukyo / niigata / sapporo / hakodate / fukushima / kokura
+surface: ""            # turf | dirt
+course_name: ""        # 例: "inner" | "outer" | "A" | "B" | "C" など
+distance_m: 0
+direction: ""          # left | right
+straight_length_m: 0   # ゴール前直線の長さ[m]
+slope_last_m: 0        # ゴール前坂の長さ[m]
+slope_last_perm: 0     # ゴール前坂の勾配[‰]（上り+）
+elevation_total_m: 0   # コース全体の高低差[m]
+n_turn: 0              # コーナー数（2 or 4 が多い）
+turn_angle_total_rad: 0    # 総曲がり角[rad]（ワンターン≈π, 二周≈2π）
+turn_share: 0.0            # 走行距離に占めるカーブ割合(0〜1) 例: 0.30
+lane_width_m: 1.2          # 1レーン幅の代表値（外々ロス近似用）
+radius_in_m: null          # 分かれば数値、無ければ null
+radius_out_m: null
+rail_positions:            # レール位置のバリエーション（分かる範囲でOK）
+  - code: "A"
+    note: "基準"
+  - code: "B"
+    note: "外へ移動"
+  - code: "C"
+    note: "さらに外へ"
