@@ -1,0 +1,30 @@
+track: "tokyo"
+surface: "dirt"
+course_name: "main"      # ダートは可動ラチなし＝固定
+distance_m: 1600
+direction: "left"
+
+# 公開値（画像の表より）
+straight_length_m: 501.6     # 直線距離[m]
+elevation_total_m: 2.5       # 高低差[m]
+
+# ゴール前坂（公称の長さ/勾配は未記載 → 後で断面から推定して更新）
+slope_last_m: 0
+slope_last_perm: 0
+
+# カーブ構成（2コーナー型）
+n_turn: 2
+turn_angle_total_rad: 3.1416  # ワンターン ≈ π
+turn_share: 0.30              # 初期値（あとでCVで微調整）
+
+# 外々ロス近似
+lane_width_m: 1.2
+radius_in_m: null
+radius_out_m: null
+
+rail_positions:
+  - code: "-"
+    note: "固定（可動ラチなし）"
+
+# 任意の参考メモ
+circumference_m_by_rail: {"-": 1899.0}   # 一周距離
