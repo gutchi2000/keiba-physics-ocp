@@ -229,3 +229,18 @@ data/processed/**
 # OS / editors
 .DS_Store
 Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Local data
+*.xlsx
+!data/**/*.yaml          # コース定義のyamlは追う
+data/**/samples/**
+
+# OS
+.DS_Store
+Thumbs.db
